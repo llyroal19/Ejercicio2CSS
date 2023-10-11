@@ -1,3 +1,11 @@
+.contenedor {
+  border: 2px solid #000; /* Borde sólido de 2 píxeles de ancho y color negro */
+  padding: 20px; /* Espacio interno de 20 píxeles */
+  margin: 20px; /* Margen externo de 20 píxeles para separar el contenedor de otros elementos */
+  background-color: #f0f0f0; /* Color de fondo gris claro */
+  border-color: #b6bdbc;
+}
+
 .galeria {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -14,7 +22,6 @@
     img {
         max-width: 100%;
         height: 100%;
-        border-radius: 20px / 20px;
         object-fit: cover;
     }
 

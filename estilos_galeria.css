@@ -1,0 +1,44 @@
+.contenedor_nav {
+    border: 2px solid #000; /* Borde sólido de 2 píxeles de ancho y color negro */
+    padding: 20px; /* Espacio interno de 20 píxeles */
+    margin: 20px; /* Margen externo de 20 píxeles para separar el contenedor de otros elementos */
+    background-color: #f0f0f0; /* Color de fondo gris claro */
+    border-color: #000000;
+  }
+  
+
+  
+
+nav {
+    width: 20%;
+    float: left;
+    padding: 20px;
+    background-color: #f0f0f0;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  nav li {
+    margin-bottom: 10px;
+  }
+  
+  /* Estilos para la galería aleatoria */
+  .galeria-aleatoria {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .galeria-aleatoria a {
+    flex: 0 0 33.33%;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .galeria-aleatoria img {
+    max-width: 100%;
+    height: auto;
+  }
+  
