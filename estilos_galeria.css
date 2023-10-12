@@ -1,30 +1,60 @@
 .contenedor_nav {
-    border: 2px solid #000; /* Borde sólido de 2 píxeles de ancho y color negro */
-    padding: 20px; /* Espacio interno de 20 píxeles */
-    margin: 20px; /* Margen externo de 20 píxeles para separar el contenedor de otros elementos */
-    background-color: #f0f0f0; /* Color de fondo gris claro */
-    border-color: #000000;
-  }
-  
-
-  
+  /*border: 2px solid #FF5733; Borde sólido de 2 píxeles de ancho y color naranja (#FF5733) */
+  /*padding: 20px;  Espacio interno de 20 píxeles */
+  background-color: #f0f0f0;*/ /* Color de fondo gris claro */
+}
 
 nav {
-    width: 20%;
-    float: left;
-    padding: 20px;
-    background-color: #f0f0f0;
+  width: 20%;
+  float: left;
+  padding: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav li {
+  border: 2px solid hwb(256 8% 52%); /* Borde sólido de 2 píxeles de ancho y color verde (#33FF57) para las opciones */
+  margin-bottom: 10px;
+  border-radius: 20px / 20px;
+  /*padding: 10px;  Espacio interno de 10 píxeles para las opciones */
+}
+
+nav a {
+  text-decoration: none;
+  color: hsla(139, 59%, 19%, 0.932); /* Color del texto */
+}
+
+nav a:hover {
+  background-color: #333; /* Cambia el fondo al pasar el mouse */
+  color: #fff; /* Cambia el color del texto al pasar el mouse */
+}
+  
+  /* Estilos para la galería matriz */
+  .galeria-var {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Cambiar el número de columnas a 5 */
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 20px;
+    border-radius: 100px / 100px;
+    position: relative;
   }
   
-  nav ul {
-    list-style-type: none;
-    padding: 0;
+  figure {
+    margin: 0;
+    position: relative;
   }
   
-  nav li {
-    margin-bottom: 10px;
+  img {
+    max-width: 100%; /* Esto asegura que las imágenes se ajusten al ancho de su contenedor */
+    height: auto; /* Permite que la altura se ajuste proporcionalmente al ancho */
+    object-fit: cover;
+    transition: transform 0.3s, box-shadow 0.3s;
   }
-  
+
+
   /* Estilos para la galería aleatoria */
   .galeria-aleatoria {
     display: flex;
@@ -40,5 +70,7 @@ nav {
   .galeria-aleatoria img {
     max-width: 100%;
     height: auto;
+    object-fit: cover;
+    transition: transform 0.3s, box-shadow 0.3s; /* Agregar transiciones para suavizar efectos */
   }
   

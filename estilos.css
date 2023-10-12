@@ -17,38 +17,49 @@
   
     figure {
         margin: 0;
+        position: relative;
+        overflow: hidden; /* Añadir un overflow para recortar sombra */
     }
   
     img {
         max-width: 100%;
         height: 100%;
         object-fit: cover;
+        transition: transform 0.3s, box-shadow 0.3s; /* Agregar transiciones para suavizar efectos */
+    }
+    
+    img:hover {
+      transform: scale(1.05); /* Escalar la imagen en un 5% al pasar el mouse */
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Agregar sombra al pasar el mouse */
     }
 
-    .galeria p {
+
+    p {
         position: absolute; /* Requerido para posicionar el texto */
-        top: 50%; /* Centrar verticalmente */
+        top: 75%; /* Centrar verticalmente */
         left: 50%; /* Centrar horizontalmente */
         transform: translate(-50%, -50%); /* Ajustar el centro */
         color: white; /* Color del texto */
-        font-size: 24px; /* Tamaño del texto */
+        font-size: 18px; /* Tamaño del texto */
         background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
         padding: 10px; /* Espacio alrededor del texto */
-        visibility: hidden; /* Ocultar el texto por defecto */
-    }
+        /*visibility: hidden; /* Ocultar el texto por defecto */
+        border-radius: 5px;
+        opacity: 0;
+        transition: opacity 0.3s;   
+          }
 
-    /* Mostrar el texto cuando se pasa el cursor sobre la imagen 
-    .galeria:hover p {
-        visibility: visible;
-    }*/
+    
 
-    .caballos:hover p {
-        visibility: visible;
+    figure:hover p {
+      opacity: 1;
+      
     }
 
 /* Estilos para el encabezado */
 header {
     background-color: #07acdd;
+    border: 2px solid #000; /* Borde sólido de 2 píxeles de ancho y color negro */
     padding: 10px;
     border-radius: 20px / 20px;
   }
