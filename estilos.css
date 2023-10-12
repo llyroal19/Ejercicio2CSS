@@ -1,7 +1,7 @@
 .contenedor {
   border: 2px solid #000; /* Borde sólido de 2 píxeles de ancho y color negro */
   padding: 20px; /* Espacio interno de 20 píxeles */
-  margin: 20px; /* Margen externo de 20 píxeles para separar el contenedor de otros elementos */
+  margin: 2px; /* Margen externo de 20 píxeles para separar el contenedor de otros elementos */
   background-color: #f0f0f0; /* Color de fondo gris claro */
   border-color: #b6bdbc;
 }
@@ -10,7 +10,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(1, 1fr); 
-    grid-gap: 20px;
+    grid-gap: 2px;
     border-radius: 100px / 100px;
     position: relative; /* posicionar el texto */
     }

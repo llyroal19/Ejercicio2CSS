@@ -1,30 +1,30 @@
 .contenedor_nav {
-  /*border: 2px solid #FF5733; Borde sólido de 2 píxeles de ancho y color naranja (#FF5733) */
-  /*padding: 20px;  Espacio interno de 20 píxeles */
-  background-color: #f0f0f0;*/ /* Color de fondo gris claro */
+  background-color: #000000;
 }
 
 nav {
-  width: 20%;
+  width: 30%;
   float: left;
-  padding: 20px;
+  padding: 30px;
+  border-radius: 40px / 40px;
 }
 
 nav ul {
-  list-style-type: none;
-  padding: 0;
+  list-style-type:none;
+    padding: 20px;
 }
 
 nav li {
-  border: 2px solid hwb(256 8% 52%); /* Borde sólido de 2 píxeles de ancho y color verde (#33FF57) para las opciones */
+  border: 2px solid hwb(256 8% 52%); /* Borde sólido de 2 píxeles de ancho para las opciones */
   margin-bottom: 10px;
+  background-color:#07acdd;
   border-radius: 20px / 20px;
   /*padding: 10px;  Espacio interno de 10 píxeles para las opciones */
 }
 
 nav a {
   text-decoration: none;
-  color: hsla(139, 59%, 19%, 0.932); /* Color del texto */
+  color:#fff; /* Color del texto */
 }
 
 nav a:hover {
@@ -35,8 +35,8 @@ nav a:hover {
   /* Estilos para la galería matriz */
   .galeria-var {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Cambiar el número de columnas a 5 */
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr); /*número de columnas a 3 */
+    grid-template-rows: repeat(3, 1fr);
     grid-gap: 20px;
     border-radius: 100px / 100px;
     position: relative;
@@ -44,33 +44,12 @@ nav a:hover {
   
   figure {
     margin: 0;
-    position: relative;
+    position:relative;
   }
   
   img {
     max-width: 100%; /* Esto asegura que las imágenes se ajusten al ancho de su contenedor */
-    height: auto; /* Permite que la altura se ajuste proporcionalmente al ancho */
+    height:fit-content; /* Permite que la altura se ajuste proporcionalmente al ancho */
     object-fit: cover;
     transition: transform 0.3s, box-shadow 0.3s;
   }
-
-
-  /* Estilos para la galería aleatoria */
-  .galeria-aleatoria {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-  .galeria-aleatoria a {
-    flex: 0 0 33.33%;
-    padding: 10px;
-    text-align: center;
-  }
-  
-  .galeria-aleatoria img {
-    max-width: 100%;
-    height: auto;
-    object-fit: cover;
-    transition: transform 0.3s, box-shadow 0.3s; /* Agregar transiciones para suavizar efectos */
-  }
-  
